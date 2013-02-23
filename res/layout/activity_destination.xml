@@ -42,7 +42,8 @@
 		    android:id="@+id/button1"
 		    android:layout_width="75dp"
 		    android:layout_height="fill_parent"
-		    android:text="@string/btn_source" />
+		    android:text="@string/btn_source"
+		    android:onClick="goToPrev" />
 	    
 	</LinearLayout>
 	
@@ -65,7 +66,8 @@
 				    android:id="@+id/button2"
 				    android:layout_width="match_parent"
 				    android:layout_height="fill_parent"
-				    android:background="@drawable/btn_left"/>
+				    android:background="@drawable/btn_left"
+				    android:onClick="goToPrev"/>
 	    </LinearLayout>
 
 		<LinearLayout
@@ -83,11 +85,12 @@
 		    android:layout_height="fill_parent"
 		    android:layout_weight="1">
 	    
-			<Button
+				<Button
 			    android:id="@+id/button3"
 			    android:layout_width="match_parent"
 			    android:layout_height="fill_parent"
-			    android:background="@drawable/btn_right"/>
+			    android:background="@drawable/btn_right"
+			    android:onClick="goToNext"/>
 	    </LinearLayout>
 	    
 	</LinearLayout>

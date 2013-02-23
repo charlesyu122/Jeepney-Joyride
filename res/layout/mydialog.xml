@@ -11,13 +11,25 @@
 	 
 	 <TextView android:id="@+id/postMessage"
 	 android:layout_width="wrap_content" android:layout_height="wrap_content"
-	 android:textSize="14px"
+	 android:textSize="20px"
 	 android:layout_below="@+id/report"
-	 android:text="traffic @ ..."/>
+	 android:text="traffic @ ..."
+	 />
 	 
-	 <ImageButton android:id="@+id/fb"
+	 <Button android:id="@+id/reportButton"
 	 android:layout_below="@+id/postMessage"
+	 android:text ="report it"
 	android:layout_width="wrap_content"
 	    android:layout_height="wrap_content"
-	 android:layout_centerHorizontal="true"/>
+	 android:layout_centerHorizontal="true"
+	 />
+	 
+	 
+	 <Button android:id="@+id/cancelButton"
+	 android:layout_toRightOf="@id/reportButton"
+	 android:text ="cancel"
+	android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	 android:layout_centerHorizontal="true"
+	 />
 </RelativeLayout>

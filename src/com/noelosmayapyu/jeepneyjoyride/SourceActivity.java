@@ -8,12 +8,15 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import com.example.jeepneyjoyride.Destination;
+import com.example.jeepneyjoyride.R;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapFragment;
 import com.google.android.gms.maps.model.LatLng;
 
 import android.app.Activity;
+import android.app.Dialog;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.AsyncTask;
@@ -23,8 +26,10 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.Spinner;
+import android.widget.TextView;
 
 public class SourceActivity extends Activity{
 	
@@ -55,16 +60,47 @@ public class SourceActivity extends Activity{
 		setup();
 	}
 	
+	//transitions
+	
+	private void goToNext(View view) {
+		Intent intent = new Intent(this, DestinationActivity.class);
+		startActivityForResult(intent, 500);
+		overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
+	}
+	
+	
+	
+	
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 		switch (item.getItemId()) {
 		case R.id.report_traffic:
-			//do here
+			 final Dialog dialog = new Dialog(this);
+			   dialog.setContentView(R.layout.mydialog);
+			   dialog.setTitle("Title...");
+			   
+			  
+			   
+			   TextView report = (TextView) dialog.findViewById(R.id.report);
+			   TextView postMessage = (TextView) dialog.findViewById(R.id.postMessage);
+			  
+			   
+			   Button b=(Button)dialog.findViewById(R.id.reportButton);
+			   b.setOnClickListener(new OnClickListener(){
+
+				public void onClick(View v) {
+					// TODO Auto-generated method stub
+					dialog.dismiss();
+					//add here sumting
+				}});
+			  
+			   dialog.show();
+						
 			return (true);
 		}
 		return (super.onOptionsItemSelected(item));
 	}
-	
+
 	private void setup(){
 		btnFindMe = (Button)findViewById(R.id.btnFindMe);
 		btnNext = (Button)findViewById(R.id.btnNext);
@@ -88,12 +124,6 @@ public class SourceActivity extends Activity{
 		// Retrieve landmarks
 		//new RetrieveLandmarks().execute();
 		
-	}
-	
-	public void onClickNext(View view) {
-		Intent intent = new Intent(this, DestinationActivity.class);
-		startActivityForResult(intent, 500);
-		overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
 	}
 	
 	class RetrieveLandmarks extends AsyncTask<String, String, String>{

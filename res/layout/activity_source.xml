@@ -67,7 +67,8 @@
                 android:id="@+id/btnPrev"
                 android:layout_width="match_parent"
                 android:layout_height="fill_parent"
-                android:background="@drawable/btn_left" />
+                android:background="@drawable/btn_left"
+                android:onClick="goToPrev" />
         </LinearLayout>
 
         <LinearLayout
@@ -98,7 +99,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="fill_parent"
                 android:background="@drawable/btn_right"
-                android:onClick="onClickNext" />
+                android:onClick="goToNext" />
         </LinearLayout>
     </LinearLayout>
 
