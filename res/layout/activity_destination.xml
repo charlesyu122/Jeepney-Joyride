@@ -39,11 +39,10 @@
 		    android:background="@drawable/spinner"/>
 
 		<Button
-		    android:id="@+id/button1"
+		    android:id="@+id/sourceButton"
 		    android:layout_width="75dp"
 		    android:layout_height="fill_parent"
-		    android:text="@string/btn_source"
-		    android:onClick="goToPrev" />
+		    android:text="@string/btn_source" />
 	    
 	</LinearLayout>
 	
@@ -67,7 +66,7 @@
 				    android:layout_width="match_parent"
 				    android:layout_height="fill_parent"
 				    android:background="@drawable/btn_left"
-				    android:onClick="goToPrev"/>
+				    android:onClick="onGoBack"/>
 	    </LinearLayout>
 
 		<LinearLayout
@@ -85,12 +84,12 @@
 		    android:layout_height="fill_parent"
 		    android:layout_weight="1">
 	    
-				<Button
+			<Button
 			    android:id="@+id/button3"
 			    android:layout_width="match_parent"
 			    android:layout_height="fill_parent"
 			    android:background="@drawable/btn_right"
-			    android:onClick="goToNext"/>
+			    android:onClick="onClickNext"/>
 	    </LinearLayout>
 	    
 	</LinearLayout>
