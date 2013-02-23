@@ -1,7 +1,5 @@
 package com.noelosmayapyu.jeepneyjoyride;
 
-import com.example.jeepneyjoyride.R;
-
 import android.app.Activity;
 import android.app.Dialog;
 import android.content.Intent;

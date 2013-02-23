@@ -1,35 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
- android:layout_width="250px"
- android:layout_height="wrap_content">
-	  
-	 <TextView android:id="@+id/report"
-	 android:layout_width="wrap_content"
-	 android:layout_height="wrap_content"
-	 android:textSize="20px"
-	 android:text="Report!"/>
-	 
-	 <TextView android:id="@+id/postMessage"
-	 android:layout_width="wrap_content" android:layout_height="wrap_content"
-	 android:textSize="20px"
-	 android:layout_below="@+id/report"
-	 android:text="traffic @ ..."
-	 />
-	 
-	 <Button android:id="@+id/reportButton"
-	 android:layout_below="@+id/postMessage"
-	 android:text ="report it"
-	android:layout_width="wrap_content"
-	    android:layout_height="wrap_content"
-	 android:layout_centerHorizontal="true"
-	 />
-	 
-	 
-	 <Button android:id="@+id/cancelButton"
-	 android:layout_toRightOf="@id/reportButton"
-	 android:text ="cancel"
-	android:layout_width="wrap_content"
-	    android:layout_height="wrap_content"
-	 android:layout_centerHorizontal="true"
-	 />
+    android:layout_width="250px"
+    android:layout_height="wrap_content" >
+
+    <TextView
+        android:id="@+id/report"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Report!"
+        android:textSize="20px" />
+
+    <TextView
+        android:id="@+id/postMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/report"
+        android:text="traffic @ ..."
+        android:textSize="20px" />
+
+    <Button
+        android:id="@+id/reportButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/postMessage"
+        android:layout_centerHorizontal="true"
+        android:text="report it" />
+
+    <Button
+        android:id="@+id/cancelButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_toRightOf="@id/reportButton"
+        android:text="cancel" />
+
 </RelativeLayout>

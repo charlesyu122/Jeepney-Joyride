@@ -1,17 +1,17 @@
 package com.noelosmayapyu.jeepneyjoyride;
 
+import com.google.android.gms.maps.model.LatLng;
+
 public class Landmark {
 	
 	String id;
 	String landmarlName;
-	double latitude;
-	double longitude;
+	LatLng location;
 	
-	public Landmark(String id, String name, double latitude, double longitude){
+	public Landmark(String id, String name, LatLng loc){
 		this.id = id;
 		this.landmarlName = name;
-		this.latitude = latitude;
-		this.longitude = longitude;
+		this.location = loc;
 	}
 
 }
