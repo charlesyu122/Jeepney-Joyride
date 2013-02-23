@@ -7,5 +7,9 @@
     <string name="splash_image">JeepneyJoyride Logo</string>
     <string name="splash_text">Loading...</string>
     <string name="btn_source">Find Me!</string>
+    <string name="source">Source:</string>
+    <string name="destination">Destination:</string>
+    <string name="jeep">Jeep:</string>
+    <string name="fare">Fare:</string>
 
 </resources>
