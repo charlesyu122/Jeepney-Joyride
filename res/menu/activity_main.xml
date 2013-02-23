@@ -1,0 +1,8 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+     <item android:id="@+id/report_traffic"
+		   android:title="Report"
+		   android:icon="@drawable/traffic_button_state"  
+		   android:showAsAction="ifRoom"/>
+
+</menu>

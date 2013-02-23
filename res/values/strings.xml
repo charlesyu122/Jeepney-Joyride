@@ -1,8 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">JeepneyJoyride</string>
+    <string name="app_name">Jeepney Joyride</string>
     <string name="hello_world">Hello world!</string>
     <string name="menu_settings">Settings</string>
-    <string name="title_activity_splash">SplashActivity</string>
+    <string name="splash_image">JeepneyJoyride Logo</string>
+    <string name="splash_text">Loading...</string>
+    <string name="btn_source">GO!</string>
 
 </resources>
