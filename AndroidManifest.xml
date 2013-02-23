@@ -24,7 +24,7 @@
 
     <!--   android:name="com.noelosmayapyu.jeepneyjoyride.ApplicationController"-->
     <application
-        
+        android:name="com.noelosmayapyu.jeepneyjoyride.ApplicationController"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >

@@ -6,6 +6,6 @@
     <string name="menu_settings">Settings</string>
     <string name="splash_image">JeepneyJoyride Logo</string>
     <string name="splash_text">Loading...</string>
-    <string name="btn_source">GO!</string>
+    <string name="btn_source">Find Me!</string>
 
 </resources>
